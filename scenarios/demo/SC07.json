@@ -1,0 +1,188 @@
+{
+  "name": "全局反馈重规划",
+  "description": "诊断方案局部可行但窗口回归；模型依据真实反馈替换",
+  "initial_state": {
+    "schema_version": "1.0",
+    "scenario_id": "SC07",
+    "seed": 42,
+    "version": 0,
+    "clock": 0.0,
+    "bounds": {
+      "width": 100.0,
+      "height": 100.0,
+      "grid_resolution": 5.0
+    },
+    "capabilities": [
+      {
+        "id": "relay",
+        "description": "relay",
+        "aggregation": "sum"
+      },
+      {
+        "id": "sensor",
+        "description": "sensor",
+        "aggregation": "sum"
+      },
+      {
+        "id": "navigation",
+        "description": "navigation",
+        "aggregation": "sum"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "U0",
+        "position": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "status": "NORMAL",
+        "capabilities": {
+          "navigation": 1.0
+        },
+        "availability": {
+          "start": 0.0,
+          "end": 400.0
+        },
+        "resource_remaining": 10.0,
+        "health": 1.0,
+        "risk": 0.0
+      },
+      {
+        "id": "U1",
+        "position": {
+          "x": 1.0,
+          "y": 0.0
+        },
+        "status": "NORMAL",
+        "capabilities": {
+          "relay": 1.0
+        },
+        "availability": {
+          "start": 0.0,
+          "end": 100.0
+        },
+        "resource_remaining": 10.0,
+        "health": 1.0,
+        "risk": 0.0
+      },
+      {
+        "id": "U2",
+        "position": {
+          "x": 50.0,
+          "y": 0.0
+        },
+        "status": "NORMAL",
+        "capabilities": {
+          "relay": 1.0
+        },
+        "availability": {
+          "start": 0.0,
+          "end": 400.0
+        },
+        "resource_remaining": 10.0,
+        "health": 1.0,
+        "risk": 0.0
+      }
+    ],
+    "tasks": [
+      {
+        "id": "T06",
+        "name": "repair",
+        "requirements": {
+          "navigation": 1.0
+        },
+        "resource_required": 1.0,
+        "min_nodes": 1,
+        "priority": 5,
+        "window": {
+          "start": 200.0,
+          "end": 300.0
+        },
+        "start": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 40.0,
+          "y": 0.0
+        },
+        "formation_id": "F0",
+        "route_id": "R06",
+        "status": "ACTIVE"
+      }
+    ],
+    "formations": [
+      {
+        "id": "F0",
+        "node_ids": [
+          "U0"
+        ],
+        "minimum_capabilities": {},
+        "roles": {}
+      }
+    ],
+    "routes": [
+      {
+        "id": "R03",
+        "waypoints": [
+          {
+            "x": 0.0,
+            "y": 0.0
+          },
+          {
+            "x": 40.0,
+            "y": 0.0
+          }
+        ]
+      },
+      {
+        "id": "R06",
+        "waypoints": [
+          {
+            "x": 0.0,
+            "y": 0.0
+          },
+          {
+            "x": 40.0,
+            "y": 0.0
+          }
+        ]
+      }
+    ],
+    "environment": []
+  },
+  "events": [
+    {
+      "event_id": "E_TASK",
+      "occurred_at": 10.0,
+      "type": "TaskAdd",
+      "task": {
+        "id": "T03",
+        "name": "repair",
+        "requirements": {
+          "navigation": 1.0,
+          "relay": 1.0
+        },
+        "resource_required": 1.0,
+        "min_nodes": 1,
+        "priority": 5,
+        "window": {
+          "start": 0.0,
+          "end": 100.0
+        },
+        "start": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "target": {
+          "x": 40.0,
+          "y": 0.0
+        },
+        "formation_id": "F0",
+        "route_id": "R03",
+        "status": "ACTIVE"
+      }
+    }
+  ]
+}

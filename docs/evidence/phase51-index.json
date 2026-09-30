@@ -1,0 +1,195 @@
+{
+  "formal_optimized": "phase51-online-c-release",
+  "real_ablation": "phase51-online-b-final",
+  "bounded_smoke": "phase51-bounded-online",
+  "full_mock_ablation": "phase51-mock-ablation",
+  "deterministic_realtime": "phase51-deterministic-realtime",
+  "additional_early_pilot": "phase51-pilot-a.json",
+  "note": "All development successes and failures are preserved. Different executable versions must not be merged into the final-version success rate.",
+  "cohorts": [
+    {
+      "directory": "phase51-bounded-online",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "bounded_agent",
+      "trials": 7,
+      "committed": 6,
+      "model_calls": 10,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "41f890e422c9dbc8e803fc57fb7df53431dc57712b74ac62aad7588a2959e868"
+    },
+    {
+      "directory": "phase51-deterministic-realtime",
+      "provider": "mock",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "deterministic_realtime",
+      "trials": 70,
+      "committed": 60,
+      "model_calls": 0,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "d9129f1ef4364c12f58f09ed0485af58113820bb3374c5aaf9b8ae98d2a63691"
+    },
+    {
+      "directory": "phase51-finalization-pilot",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 2,
+      "committed": 2,
+      "model_calls": 3,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "0ae62578ea3ae352515e42b94857574de8f90d77487e3e6bd452f320d041a76e"
+    },
+    {
+      "directory": "phase51-lineage-pilot",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 3,
+      "committed": 3,
+      "model_calls": 20,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "2b58eb014ff9a60ab5e49644837a07155be6932977b9e01976cbb4b07e4d722c"
+    },
+    {
+      "directory": "phase51-mock-ablation",
+      "provider": "mock",
+      "profiles": [
+        "original",
+        "snapshot",
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 210,
+      "committed": 210,
+      "model_calls": 760,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "ba6831ede3a7e4af87f82ae73e54f8ed1f16b67f4ed86df81bf55d2fb2d77ecb"
+    },
+    {
+      "directory": "phase51-online-b-final",
+      "provider": "real",
+      "profiles": [
+        "snapshot"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 35,
+      "committed": 35,
+      "model_calls": 180,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "2c78aad2a7bd671c220e0223f467a9ab70b9273e86c6090871aa5a9cf3a0951d"
+    },
+    {
+      "directory": "phase51-online-c",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 70,
+      "committed": 65,
+      "model_calls": 191,
+      "complete": true,
+      "superseded_reason": "Completed discovery cohort exposed scope-only rejected-plan lineage defect; retained in full. Fixed version is evaluated in a new complete cohort.",
+      "raw_sha256": "fe1fd4456b53509b61f14e33eb3c27577e99f7d01c06163a68f795a1fc5d7fd0"
+    },
+    {
+      "directory": "phase51-online-c-final",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 70,
+      "committed": 66,
+      "model_calls": 159,
+      "complete": true,
+      "superseded_reason": "Superseded by phase51-online-c-verified: historical FAIL was not explicitly distinguished from validation of a replacement plan; added applies_to_current_plan and NOT_VALIDATED with regression coverage.",
+      "raw_sha256": "e6b544a4a9a66c9c8f9f3e19f57e9f57687142395364608f5123193cfeb8ca54"
+    },
+    {
+      "directory": "phase51-online-c-release",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 70,
+      "committed": 70,
+      "model_calls": 110,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "bdc96f84354f630c388b9860df69eeee7033b1e66ffd67931f3a918624a574bd"
+    },
+    {
+      "directory": "phase51-online-c-verified",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 70,
+      "committed": 68,
+      "model_calls": 144,
+      "complete": true,
+      "superseded_reason": "Superseded by phase51-online-c-release: applies_to_current_plan annotation alone did not remove obsolete FAIL details from live Delta Context; obsolete details now remain in audit only with a minimal SUPERSEDED historical reference.",
+      "raw_sha256": "b0cc89735e693a8e2b8fb37ffdba936e79e55740e22361eeacafe83991903ca3"
+    },
+    {
+      "directory": "phase51-online-pilot",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 4,
+      "committed": 1,
+      "model_calls": 24,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "480ee5fba04ff408ab485a3ccefc517c8d51b68cd03ff604bead69d4331f0e1d"
+    },
+    {
+      "directory": "phase51-schema-details-pilot",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 1,
+      "committed": 1,
+      "model_calls": 2,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "b234961c227ec3c2a7352431dc4b1f1b26c97aca4121bf0802ac33eaeca2c3a4"
+    },
+    {
+      "directory": "phase51-schema-pilot",
+      "provider": "real",
+      "profiles": [
+        "optimized"
+      ],
+      "execution_mode": "adaptive_agent",
+      "trials": 1,
+      "committed": 1,
+      "model_calls": 3,
+      "complete": true,
+      "superseded_reason": null,
+      "raw_sha256": "1dc3733908bea5ae1d1c29dbd885e753a0fde1ffea371f7adae490d80d80163d"
+    }
+  ]
+}

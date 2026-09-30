@@ -1,0 +1,26 @@
+[
+  {
+    "screenshot": "SC08-recovery-detail.png",
+    "run_id": "b57e3a3b-7267-4dd0-bcde-50460b194ac6",
+    "source": "Actual P6.1 live run, replayed through original REST API",
+    "captured_at": "2026-09-27T13:02:45.068Z"
+  },
+  {
+    "screenshot": "SC08-changes-detail.png",
+    "run_id": "b57e3a3b-7267-4dd0-bcde-50460b194ac6",
+    "source": "Actual P6.1 live run, replayed through original REST API",
+    "captured_at": "2026-09-27T13:02:45.155Z"
+  },
+  {
+    "screenshot": "SC07-failure-detail.png",
+    "run_id": "b30bdda9-75c9-4319-8c84-ed44a37dadfe",
+    "source": "Actual P6.1 live run, replayed through original REST API",
+    "captured_at": "2026-09-27T13:02:46.189Z"
+  },
+  {
+    "screenshot": "SC07-pass-detail.png",
+    "run_id": "b30bdda9-75c9-4319-8c84-ed44a37dadfe",
+    "source": "Actual P6.1 live run, replayed through original REST API",
+    "captured_at": "2026-09-27T13:02:46.307Z"
+  }
+]

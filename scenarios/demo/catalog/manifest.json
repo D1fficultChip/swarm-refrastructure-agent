@@ -1,0 +1,107 @@
+[
+  {
+    "scenario_id": "SC01",
+    "name": "关键能力失效",
+    "description": "单节点失效 → 影响传播 → 原位修复",
+    "expected_properties": [
+      "capability_restored",
+      "unrelated_tasks_unchanged"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC02",
+    "name": "冗余能力保持",
+    "description": "影响不等于不可行；剩余 provider 覆盖任务",
+    "expected_properties": [
+      "affected_but_keep",
+      "no_reconstruction"
+    ],
+    "diagnostic_seed": false,
+    "support": "PARTIALLY_SUPPORTED",
+    "default_visible": false,
+    "support_note": "P2 KEEP under redundancy, but P4 rejects failed assigned members; full no-reconstruction claim unsupported."
+  },
+  {
+    "scenario_id": "SC03",
+    "name": "双故障与共享候选",
+    "description": "两个任务竞争备用 relay，检查占用与最小扰动",
+    "expected_properties": [
+      "capability_restored",
+      "unique_membership"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC04",
+    "name": "环境禁区 / 航迹修复",
+    "description": "只改变受影响航迹，编队与节点归属保持不变",
+    "expected_properties": [
+      "route_only",
+      "unrelated_routes_unchanged"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC05",
+    "name": "任务目标变化",
+    "description": "TargetMove 后旧航迹终点失配，重新规划至新目标",
+    "expected_properties": [
+      "route_endpoint_matches_target",
+      "route_only"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC06",
+    "name": "混合异常",
+    "description": "T03 能力缺口 + T05 航迹冲突，使用两类技能",
+    "expected_properties": [
+      "formation_and_route_changes",
+      "all_hard_constraints_pass"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC07",
+    "name": "全局反馈重规划",
+    "description": "诊断方案局部可行但窗口回归；模型依据真实反馈替换",
+    "expected_properties": [
+      "validator_fail_then_pass",
+      "explicit_scope_expansion"
+    ],
+    "diagnostic_seed": true,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": ""
+  },
+  {
+    "scenario_id": "SC08",
+    "name": "综合演示",
+    "description": "60 节点、双故障、禁区、任务优先级变化",
+    "expected_properties": [
+      "formation_and_route_changes",
+      "all_hard_constraints_pass",
+      "failed_nodes_remain_failed"
+    ],
+    "diagnostic_seed": false,
+    "support": "SUPPORTED",
+    "default_visible": true,
+    "support_note": "Priority is an input/order attribute; dynamic priority scheduling remains NOT_EVALUATED."
+  }
+]

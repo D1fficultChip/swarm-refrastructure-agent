@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-09-27T12:40:45.960Z",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "records": [
+    {
+      "scenario": "SC03",
+      "run_id": "44dd3d04-d01c-4087-b99c-cada5e178bc4",
+      "mode": "deterministic_realtime"
+    },
+    {
+      "scenario": "SC08",
+      "run_id": "31137d11-d4b7-42b7-b988-1fae3d65f971",
+      "mode": "deterministic_realtime"
+    },
+    {
+      "scenario": "SC07",
+      "run_id": "a8a4469b-0940-43f7-8044-ff2d1816e6bf",
+      "mode": "adaptive_agent"
+    }
+  ],
+  "origin": "Live original Phase 6 UI; real API and real SC07 Qwen policy"
+}

@@ -1,0 +1,8 @@
+{
+  "max_subsets": 4096,
+  "max_options": 32,
+  "max_branches": 512,
+  "max_route_expansions": 25000,
+  "max_grid_cells": 50000,
+  "route_deviation_weight": 0.1
+}

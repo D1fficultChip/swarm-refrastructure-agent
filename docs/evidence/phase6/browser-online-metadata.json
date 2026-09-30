@@ -1,0 +1,35 @@
+[
+  {
+    "screenshot": "sc08-adaptive.png",
+    "run_id": "68de1ba7-fa35-4e1d-b8e7-9a9f36524836",
+    "scenario": "SC08",
+    "mode": "adaptive_agent",
+    "original_file": "artifacts/phase6/agent/runs/68de1ba7-fa35-4e1d-b8e7-9a9f36524836.json",
+    "sha256": "50d2b60777a206b03124c7b9decee9a2053e3333ae1bf6e8baf1347fb11ea505",
+    "data_origin": "Unmodified real Qwen online trial, rendered via persisted replay API",
+    "captured_at": "2026-09-27T12:13:54.935Z",
+    "page_errors": []
+  },
+  {
+    "screenshot": "sc07-feedback.png",
+    "run_id": "0b762634-9752-4159-a264-2b84178a63bd",
+    "scenario": "SC07",
+    "mode": "adaptive_agent",
+    "original_file": "artifacts/phase6/feedback/runs/0b762634-9752-4159-a264-2b84178a63bd.json",
+    "sha256": "cd0af6dd45f1818a1b1f7d0e195325cac3219328f3f73829f36a9b9623b259d7",
+    "data_origin": "Unmodified real Qwen online trial, rendered via persisted replay API",
+    "captured_at": "2026-09-27T12:13:55.556Z",
+    "page_errors": []
+  },
+  {
+    "screenshot": "sc08-bounded.png",
+    "run_id": "c251255e-a373-4b16-8f4f-782425029154",
+    "scenario": "SC08",
+    "mode": "bounded_agent",
+    "original_file": "artifacts/phase6/bounded/runs/c251255e-a373-4b16-8f4f-782425029154.json",
+    "sha256": "0c392d55a955d5edc3306319811a92945dc9fe5d263f89f88bd0af038c43abd2",
+    "data_origin": "Unmodified real Qwen online trial, rendered via persisted replay API",
+    "captured_at": "2026-09-27T12:13:56.149Z",
+    "page_errors": []
+  }
+]

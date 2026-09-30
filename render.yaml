@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cluster-reconstruction-demo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: MODEL_API_KEY
+        sync: false

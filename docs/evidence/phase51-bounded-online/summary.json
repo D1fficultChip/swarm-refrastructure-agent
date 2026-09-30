@@ -1,0 +1,330 @@
+{
+  "optimized/A": {
+    "n": 2,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.0,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": 0.0,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 1.0,
+      "p95": 1,
+      "max": 1
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 0,
+      "max": 0
+    },
+    "tool_calls": {
+      "p50": 3.0,
+      "p95": 3,
+      "max": 3
+    },
+    "solver_calls": {
+      "p50": 3.0,
+      "p95": 3,
+      "max": 3
+    },
+    "agent_latency_ms": {
+      "p50": 3841.4366625002003,
+      "p95": 4884.510732998024,
+      "max": 4884.510732998024
+    },
+    "model_latency_ms": {
+      "p50": 3696.420490501623,
+      "p95": 4752.85870800144,
+      "max": 4752.85870800144
+    },
+    "model_each_call_ms": {
+      "p50": 3696.420490501623,
+      "p95": 4752.85870800144,
+      "max": 4752.85870800144
+    },
+    "pure_agent_latency_ms": {
+      "p50": 3841.4366625002003,
+      "p95": 4884.510732998024,
+      "max": 4884.510732998024
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 124.72423200961202,
+      "p95": 131.84708802145906,
+      "max": 131.84708802145906
+    },
+    "under_5s_rate": 1.0,
+    "disruption_comparison": {
+      "equal": 2,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 5330,
+    "output_tokens": 178,
+    "termination_counts": {
+      "SUCCESS": 2
+    },
+    "prompt_size_mean": {
+      "system_chars": 3329.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 3998.0,
+      "history_chars": 0.0,
+      "estimated_input_tokens": 3985.0
+    }
+  },
+  "optimized/B": {
+    "n": 2,
+    "pure_agent_success_rate": 0.0,
+    "fallback_success_rate": 1.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 1.0,
+    "invalid_action_rate": 0.0,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": 0.0,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 2.0,
+      "p95": 2,
+      "max": 2
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 0,
+      "max": 0
+    },
+    "tool_calls": {
+      "p50": 1.0,
+      "p95": 1,
+      "max": 1
+    },
+    "solver_calls": {
+      "p50": 9.0,
+      "p95": 9,
+      "max": 9
+    },
+    "agent_latency_ms": {
+      "p50": 5115.292406495428,
+      "p95": 5120.857422996778,
+      "max": 5120.857422996778
+    },
+    "model_latency_ms": {
+      "p50": 4717.529081492103,
+      "p95": 4719.124273993657,
+      "max": 4719.124273993657
+    },
+    "model_each_call_ms": {
+      "p50": 2359.5621369968285,
+      "p95": 2448.9977409975836,
+      "max": 2448.9977409975836
+    },
+    "pure_agent_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "fallback_latency_ms": {
+      "p50": 81.94927900331095,
+      "p95": 82.14925300853793,
+      "max": 82.14925300853793
+    },
+    "algorithm_core_ms": {
+      "p50": 298.9062824854045,
+      "p95": 306.4443029870745,
+      "max": 306.4443029870745
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 2,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 8830,
+    "output_tokens": 154,
+    "termination_counts": {
+      "FALLBACK_SUCCESS": 2
+    },
+    "prompt_size_mean": {
+      "system_chars": 1664.5,
+      "tool_schema_chars": 888.5,
+      "action_schema_chars": 1412.5,
+      "context_chars": 4306.5,
+      "history_chars": 0.0,
+      "estimated_input_tokens": 2761.5
+    }
+  },
+  "optimized/C": {
+    "n": 2,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.0,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": null,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 1.0,
+      "p95": 1,
+      "max": 1
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 0,
+      "max": 0
+    },
+    "tool_calls": {
+      "p50": 3.0,
+      "p95": 3,
+      "max": 3
+    },
+    "solver_calls": {
+      "p50": 1.0,
+      "p95": 1,
+      "max": 1
+    },
+    "agent_latency_ms": {
+      "p50": 2506.9281225005398,
+      "p95": 2959.8511490039527,
+      "max": 2959.8511490039527
+    },
+    "model_latency_ms": {
+      "p50": 2497.203636994527,
+      "p95": 2949.9695709964726,
+      "max": 2949.9695709964726
+    },
+    "model_each_call_ms": {
+      "p50": 2497.203636994527,
+      "p95": 2949.9695709964726,
+      "max": 2949.9695709964726
+    },
+    "pure_agent_latency_ms": {
+      "p50": 2506.9281225005398,
+      "p95": 2959.8511490039527,
+      "max": 2959.8511490039527
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 6.319966501905583,
+      "p95": 6.401424994692206,
+      "max": 6.401424994692206
+    },
+    "under_5s_rate": 1.0,
+    "disruption_comparison": {
+      "equal": 2,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 2660,
+    "output_tokens": 139,
+    "termination_counts": {
+      "SUCCESS": 2
+    },
+    "prompt_size_mean": {
+      "system_chars": 3329.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 1076.0,
+      "history_chars": 0.0,
+      "estimated_input_tokens": 3011.0
+    }
+  },
+  "optimized/D": {
+    "n": 1,
+    "pure_agent_success_rate": 0.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 0.0,
+    "validation_success_rate": 0.0,
+    "fallback_rate": 1.0,
+    "invalid_action_rate": 0.0,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": null,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 2,
+      "p95": 2,
+      "max": 2
+    },
+    "validation_retries": {
+      "p50": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "tool_calls": {
+      "p50": 1,
+      "p95": 1,
+      "max": 1
+    },
+    "solver_calls": {
+      "p50": 6,
+      "p95": 6,
+      "max": 6
+    },
+    "agent_latency_ms": {
+      "p50": 5040.8608129946515,
+      "p95": 5040.8608129946515,
+      "max": 5040.8608129946515
+    },
+    "model_latency_ms": {
+      "p50": 5022.016418995918,
+      "p95": 5022.016418995918,
+      "max": 5022.016418995918
+    },
+    "model_each_call_ms": {
+      "p50": 2511.008209497959,
+      "p95": 3256.7336290085223,
+      "max": 3256.7336290085223
+    },
+    "pure_agent_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "fallback_latency_ms": {
+      "p50": 4.003640002338216,
+      "p95": 4.003640002338216,
+      "max": 4.003640002338216
+    },
+    "algorithm_core_ms": {
+      "p50": 9.446903990465216,
+      "p95": 9.446903990465216,
+      "max": 9.446903990465216
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 0,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 1
+    },
+    "input_tokens": 1588,
+    "output_tokens": 48,
+    "termination_counts": {
+      "FALLBACK_FAILED": 1
+    },
+    "prompt_size_mean": {
+      "system_chars": 1664.5,
+      "tool_schema_chars": 888.5,
+      "action_schema_chars": 1412.5,
+      "context_chars": 861.5,
+      "history_chars": 0.0,
+      "estimated_input_tokens": 1613.0
+    }
+  }
+}

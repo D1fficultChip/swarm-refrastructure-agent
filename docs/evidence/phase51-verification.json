@@ -1,0 +1,35 @@
+{
+  "purpose": "P5 evidence and P2-P4 algorithm preservation check",
+  "files": {
+    "docs/evidence/phase5-mock.json": "c397bee7cf91e24b120e3468f487595729db741b7587c0b1f0ae5ea045ba60eb",
+    "docs/evidence/phase5-real.json": "167638253948fcce9abebef7cbc8cf713038b26c44f6b35147cdf6dae10e70a9",
+    "backend/app/reconstruction/__init__.py": "51bb006aefc94c0a007fe4c00a2f1ba7998d3da9d29e1b8cc67cae5ac7bdfe59",
+    "backend/app/reconstruction/config.py": "524c527c3a734dd70ecc63d07257fefe9477288404fada5fd0f9f741c245ae06",
+    "backend/app/reconstruction/common.py": "2f17b32d056308b8fd575503c054cc933ac57cd20769a4426a59b71dba078c97",
+    "backend/app/reconstruction/reservations.py": "5d7fb3bfda45f766002231ad29d367a8b2dbed13e9ab84a509ae6ef4bcf68156",
+    "backend/app/reconstruction/scope.py": "810e0747ebbb323449cd65189b9d787f36c0ce66aca09b2b0bf2d8ace27a6de5",
+    "backend/app/reconstruction/candidates.py": "1e2a0371e2df4c307530840331cc841682daae60333827748d360da8f0c92d71",
+    "backend/app/reconstruction/formation.py": "5d9783a1faebb938c2982859a0a5ee32e37c36415a7626387d624433dd70033c",
+    "backend/app/reconstruction/task.py": "4289f7e92281c0f95df163481184169caf7dcf6334a3003b5ea55b34c2cbeaf8",
+    "backend/app/reconstruction/routes.py": "364e2956647dd6cbe165fed93bc48bf5a6ee74659ad32644eee8b8e3c6b20b28",
+    "backend/app/reconstruction/cost.py": "634c3cff43f6e8a2c271064cedec9592819768fff338bffc7eb7dba349ad55d8",
+    "backend/app/reconstruction/planner.py": "71f944aa5a38ced968f8598e3bb724af8f8a0b08e2d9f8c19dbe8da6fb67dcc0",
+    "backend/app/reconstruction/materializer.py": "7c1b86231f7b3b775f66d8586ffd0674cea51f782cabab3c03e19922e981ea57",
+    "backend/app/reconstruction/validator.py": "dfbbc025c41d0bae11d537f1b1735ebf1b18777b61b0da1e7175b57f5e2ee7aa",
+    "backend/app/reconstruction/store.py": "78afe4743489c38b1c1b4971b9909b2d7b2aebbbf789b344c340addbf15095c6",
+    "backend/app/reconstruction/engine.py": "c0baf5298b37c5ee2ad44a9e90568517c8910943bcd917515936bdca82dbf5f7",
+    "backend/app/reconstruction/primitives.py": "b4ee182086902e06f65cd5110f700cf803d3923089308f35f75bcc77b92d70a9",
+    "backend/app/assessment/__init__.py": "f1063051cba012ffb8403a51184cde0968d2e058425d61df932cc0abec9b847c",
+    "backend/app/assessment/facts.py": "8cc5a6db3d4d6208b46dc0d3978d9b4e7e6c652f70c9719f59d51ae7521d8fdc",
+    "backend/app/assessment/engine.py": "9d01831391c27827a93643370cc236f94b8d4faa8e57ccd0ad22c346114f8df9",
+    "backend/app/assessment/service.py": "10719f367e1fb0df2154ddb2cec3a390038b1983693736e021cd5c3af7111532"
+  },
+  "all_unchanged": true,
+  "tests": {
+    "command": "PYTHONPATH=/tmp/cluster-reconstruction-deps:. PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest -q",
+    "passed": 262,
+    "warnings": 1,
+    "warning_note": "Existing Starlette/httpx deprecation warning",
+    "duration_seconds": 13.08
+  }
+}

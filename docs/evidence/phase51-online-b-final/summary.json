@@ -1,0 +1,330 @@
+{
+  "snapshot/A": {
+    "n": 10,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.15217391304347827,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": 0.0,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 4.5,
+      "p95": 8,
+      "max": 8
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 1,
+      "max": 1
+    },
+    "tool_calls": {
+      "p50": 3.5,
+      "p95": 6,
+      "max": 6
+    },
+    "solver_calls": {
+      "p50": 3.0,
+      "p95": 3,
+      "max": 3
+    },
+    "agent_latency_ms": {
+      "p50": 11667.252770996129,
+      "p95": 28662.32312998909,
+      "max": 28662.32312998909
+    },
+    "model_latency_ms": {
+      "p50": 11485.549977493065,
+      "p95": 28467.62633799517,
+      "max": 28467.62633799517
+    },
+    "model_each_call_ms": {
+      "p50": 2444.7664489998715,
+      "p95": 4543.90912099916,
+      "max": 4678.126415004954
+    },
+    "pure_agent_latency_ms": {
+      "p50": 11667.252770996129,
+      "p95": 28662.32312998909,
+      "max": 28662.32312998909
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 147.25332399393665,
+      "p95": 172.17291097040288,
+      "max": 172.17291097040288
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 10,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 78570,
+    "output_tokens": 3091,
+    "termination_counts": {
+      "SUCCESS": 10
+    },
+    "prompt_size_mean": {
+      "system_chars": 3118.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 1471.3695652173913,
+      "history_chars": 372.1304347826087,
+      "estimated_input_tokens": 3189.6521739130435
+    }
+  },
+  "snapshot/B": {
+    "n": 10,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.08163265306122448,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": 0.0,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 4.0,
+      "p95": 9,
+      "max": 9
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 2,
+      "max": 2
+    },
+    "tool_calls": {
+      "p50": 4.0,
+      "p95": 7,
+      "max": 7
+    },
+    "solver_calls": {
+      "p50": 9.0,
+      "p95": 9,
+      "max": 9
+    },
+    "agent_latency_ms": {
+      "p50": 10458.07889700518,
+      "p95": 22074.847013995168,
+      "max": 22074.847013995168
+    },
+    "model_latency_ms": {
+      "p50": 10076.223203985137,
+      "p95": 21664.428274016245,
+      "max": 21664.428274016245
+    },
+    "model_each_call_ms": {
+      "p50": 2537.0829180028522,
+      "p95": 3362.2712990036234,
+      "max": 4224.888479002402
+    },
+    "pure_agent_latency_ms": {
+      "p50": 10458.07889700518,
+      "p95": 22074.847013995168,
+      "max": 22074.847013995168
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 361.2725479833898,
+      "p95": 413.78552503010724,
+      "max": 413.78552503010724
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 10,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 111345,
+    "output_tokens": 3582,
+    "termination_counts": {
+      "SUCCESS": 10
+    },
+    "prompt_size_mean": {
+      "system_chars": 3118.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 2932.816326530612,
+      "history_chars": 376.265306122449,
+      "estimated_input_tokens": 3677.9795918367345
+    }
+  },
+  "snapshot/C": {
+    "n": 10,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.1724137931034483,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": null,
+    "reason_argument_inconsistencies": 0,
+    "model_calls": {
+      "p50": 5.5,
+      "p95": 11,
+      "max": 11
+    },
+    "validation_retries": {
+      "p50": 0.0,
+      "p95": 1,
+      "max": 1
+    },
+    "tool_calls": {
+      "p50": 4.5,
+      "p95": 8,
+      "max": 8
+    },
+    "solver_calls": {
+      "p50": 1.0,
+      "p95": 1,
+      "max": 1
+    },
+    "agent_latency_ms": {
+      "p50": 13936.583636488649,
+      "p95": 25957.717354991473,
+      "max": 25957.717354991473
+    },
+    "model_latency_ms": {
+      "p50": 13918.474499507283,
+      "p95": 25934.95856403024,
+      "max": 25934.95856403024
+    },
+    "model_each_call_ms": {
+      "p50": 2261.236923506658,
+      "p95": 3980.8752440003445,
+      "max": 5001.421711000148
+    },
+    "pure_agent_latency_ms": {
+      "p50": 13936.583636488649,
+      "p95": 25957.717354991473,
+      "max": 25957.717354991473
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 10.861873008252587,
+      "p95": 15.108048974070698,
+      "max": 15.108048974070698
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 10,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 0
+    },
+    "input_tokens": 81425,
+    "output_tokens": 3682,
+    "termination_counts": {
+      "SUCCESS": 10
+    },
+    "prompt_size_mean": {
+      "system_chars": 3118.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 855.5344827586207,
+      "history_chars": 332.87931034482756,
+      "estimated_input_tokens": 2970.810344827586
+    }
+  },
+  "snapshot/D": {
+    "n": 5,
+    "pure_agent_success_rate": 1.0,
+    "fallback_success_rate": 0.0,
+    "overall_success_rate": 1.0,
+    "validation_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "invalid_action_rate": 0.037037037037037035,
+    "dominated_action_rejection_rate": 0.0,
+    "dominated_choice_rate": 0.0,
+    "reason_argument_inconsistencies": 3,
+    "model_calls": {
+      "p50": 5,
+      "p95": 8,
+      "max": 8
+    },
+    "validation_retries": {
+      "p50": 1,
+      "p95": 2,
+      "max": 2
+    },
+    "tool_calls": {
+      "p50": 6,
+      "p95": 7,
+      "max": 7
+    },
+    "solver_calls": {
+      "p50": 6,
+      "p95": 9,
+      "max": 9
+    },
+    "agent_latency_ms": {
+      "p50": 11968.485751000117,
+      "p95": 18936.391290000756,
+      "max": 18936.391290000756
+    },
+    "model_latency_ms": {
+      "p50": 11939.023072001874,
+      "p95": 18896.893725992413,
+      "max": 18896.893725992413
+    },
+    "model_each_call_ms": {
+      "p50": 2061.1667560006026,
+      "p95": 3602.274466000381,
+      "max": 3851.2530229927506
+    },
+    "pure_agent_latency_ms": {
+      "p50": 11968.485751000117,
+      "p95": 18936.391290000756,
+      "max": 18936.391290000756
+    },
+    "fallback_latency_ms": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "algorithm_core_ms": {
+      "p50": 21.70223102439195,
+      "p95": 30.257310005254112,
+      "max": 30.257310005254112
+    },
+    "under_5s_rate": 0.0,
+    "disruption_comparison": {
+      "equal": 0,
+      "agent_better": 0,
+      "agent_worse": 0,
+      "not_comparable": 5
+    },
+    "input_tokens": 44991,
+    "output_tokens": 1758,
+    "termination_counts": {
+      "SUCCESS": 5
+    },
+    "prompt_size_mean": {
+      "system_chars": 3118.0,
+      "tool_schema_chars": 1777.0,
+      "action_schema_chars": 2825.0,
+      "context_chars": 1413.9259259259259,
+      "history_chars": 459.5925925925926,
+      "estimated_input_tokens": 3199.4444444444443
+    }
+  }
+}

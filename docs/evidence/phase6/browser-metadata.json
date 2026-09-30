@@ -1,0 +1,13 @@
+{
+  "run_id": "7e12abfa-7bc0-4554-8a99-2118b7017235",
+  "source": "/api/v1/demo/run/7e12abfa-7bc0-4554-8a99-2118b7017235",
+  "scenario": "SC08",
+  "mode": "deterministic_realtime",
+  "viewport": {
+    "width": 1600,
+    "height": 1100
+  },
+  "captured_at": "2026-09-27T12:18:28.575Z",
+  "data_origin": "Live backend, no mocked responses",
+  "page_errors": []
+}

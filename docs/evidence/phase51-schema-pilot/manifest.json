@@ -1,0 +1,54 @@
+{
+  "phase": "5.1",
+  "provider": "real",
+  "profiles": [
+    "optimized"
+  ],
+  "counts": {
+    "A": 0,
+    "B": 1,
+    "C": 0,
+    "D": 0
+  },
+  "execution_mode": "adaptive_agent",
+  "started_at": "2026-09-24T05:48:27.123908+00:00",
+  "config": {
+    "provider": "openai_compatible",
+    "model_name": "qwen3.8-max",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model_timeout_seconds": 25.0,
+    "model_max_retries": 1,
+    "model_temperature": 0.0,
+    "model_max_output_tokens": 1000,
+    "structured_output": "json_schema",
+    "enable_thinking": false,
+    "max_agent_steps": 16,
+    "max_model_calls": 20,
+    "max_validation_retries": 3,
+    "max_stale_restarts": 2,
+    "max_total_seconds": 120.0,
+    "fallback_enabled": false,
+    "structured_retry_limit": 2,
+    "context_budget": {
+      "max_affected_tasks": 8,
+      "max_candidate_summaries": 6,
+      "max_history_steps": 5,
+      "max_validation_violations": 12,
+      "max_serialized_chars": 14000
+    },
+    "policy_profile": "optimized",
+    "execution_mode": "adaptive_agent",
+    "fast_model_name": "qwen3.8-flash",
+    "strong_model_name": "qwen3.8-max",
+    "auto_commit_after_validation": true,
+    "decision_time_budget": 15.0,
+    "bounded_max_model_calls": 2,
+    "bounded_agent_seconds": 5.0,
+    "max_option_tasks": 8,
+    "max_options_per_strategy": 4,
+    "snapshot_option_limit": 16,
+    "delta_context_chars": 9000
+  },
+  "selection": "all consecutive trials; no failed trial removal",
+  "finished_at": "2026-09-24T05:48:36.451050+00:00"
+}
