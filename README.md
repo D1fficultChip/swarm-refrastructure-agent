@@ -10,12 +10,34 @@
 
 | 项目 | 要求 |
 |---|---|
-| 操作系统 | Ubuntu/Linux、macOS；Windows 建议使用 WSL2 Ubuntu |
+| 操作系统 | Windows 10/11（64 位）、Ubuntu/Linux、macOS；Windows 可原生运行，不要求 WSL2 |
 | Python | 3.10 或更新版本，带 `venv` 和 `pip` |
 | Node.js | 20.19+ 或 22.12+；附带 npm |
 | 网络 | 首次安装依赖需要访问 Python 和 npm 软件包源；离线确定性演示运行时不需要模型网络 |
 
-下面的命令在 Linux/macOS 终端或 WSL2 Ubuntu 中执行。Windows 原生 PowerShell 用户可先安装 WSL2，再在 WSL 终端操作；不要把 `bash scripts/run_demo.sh` 当作 PowerShell 命令执行。
+### Windows 10/11：PowerShell 原生运行
+
+先安装 [Git for Windows](https://git-scm.com/download/win)、[64 位 Python](https://www.python.org/downloads/windows/)（推荐 3.11，安装时勾选 Python Launcher）和 [Node.js](https://nodejs.org/en/download)（建议 22.12 或更新的兼容版本）。安装后重新打开 PowerShell，执行：
+
+```powershell
+git clone https://github.com/D1fficultChip/swarm-refrastructure-agent.git
+cd swarm-refrastructure-agent
+
+py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.lock
+
+cd frontend
+npm.cmd ci
+cd ..
+
+.\.venv\Scripts\python.exe -m scripts.run_demo
+```
+
+打开 <http://127.0.0.1:5173>；保持 PowerShell 窗口运行，按 `Ctrl+C` 停止。下次开机后，在仓库目录运行 `.\.venv\Scripts\python.exe -m scripts.run_demo`。这里直接调用虚拟环境的 Python，不需要运行 `Activate.ps1`，也不需要修改 PowerShell 执行策略。若安装的是 Python 3.10 或 3.12，把 `py -3.11` 中的版本号改为实际安装的版本；`py --list` 可查看。
+
+### Linux/macOS 或 WSL2
+
+下面的命令在 Linux/macOS 终端或 WSL2 Ubuntu 中执行。Windows PowerShell 请使用上一节的命令，不要运行 Bash 脚本。
 
 ```bash
 git clone https://github.com/D1fficultChip/swarm-refrastructure-agent.git
@@ -47,11 +69,11 @@ cd frontend && npm ci && cd ..
 bash scripts/run_demo.sh
 ```
 
-`.python-deps`、`.venv`、`frontend/node_modules`、运行结果及 API 密钥均被 Git 忽略，不需要上传。
+`.python-deps`、`.venv`、`frontend/node_modules`、运行结果及 API 密钥均被 Git 忽略，不需要上传。依赖必须在甲方电脑上安装；不要把 Linux 的 `.venv`、`.python-deps` 或 `node_modules` 直接拷贝到 Windows。
 
 ### 可选：使用自己的 Qwen API 密钥
 
-确定性实时模式不需要密钥。若希望体验模型驱动的 Agent Policy，需自行准备兼容配置的模型 API 密钥，并在**本机**创建 `docs/API` 文件，文件内容只放一行密钥；Linux/macOS 下执行 `chmod 600 docs/API`。启动脚本会在后端进程中读取该文件。也可在启动终端设置 `MODEL_API_KEY` 环境变量；`.env.example` 是变量示例，程序不会自动加载 `.env`。
+确定性实时模式不需要密钥。若希望体验模型驱动的 Agent Policy，需自行准备兼容配置的模型 API 密钥，并在**本机**创建 `docs/API` 文件，文件内容只放一行密钥；Linux/macOS 下执行 `chmod 600 docs/API`。Bash 和跨平台 Python 启动脚本都会在后端进程中读取该文件。也可在启动终端设置 `MODEL_API_KEY` 环境变量；`.env.example` 是变量示例，程序不会自动加载 `.env`。
 
 模型名称、接口地址和超时配置在 [config/agent.json](config/agent.json)。使用 Agent 模式会向配置的模型服务发出请求，可能产生费用；不配置密钥而选择 Agent 模式时，页面会提示模型未配置，切换回“实时确定性模式”即可。不要提交 `docs/API`、`.env` 或把密钥写入前端源码。
 
